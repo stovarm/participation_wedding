@@ -10,7 +10,7 @@ html {
 
 @font-face {
     font-family: "athoor";
-    src: url(/src/assets/AthoorStyleSignature.woff);
+    src: url(/AthoorStyleSignature.woff);
 }
 
 body{
