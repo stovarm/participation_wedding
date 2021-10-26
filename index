@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lau & Sergio | Participación</title>
+    <link rel="stylesheet" href="./src/css/participacion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Kaisei+HarunoUmi:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section class="titles">
+            <h1>Sergio y Laura</h1>
+            <h2>NUESTRA BODA</h2>            
+        </section>
+    </header>
+    <main>
+        <iframe src="https://www.youtube.com/embed/H267wldsvGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="streaming">
+            <a href="https://www.facebook.com/andres.tovar.92">VER TRANSMISIÓN EN VIVO</a>
+        </div>
+        <h3>30 OCTUBRE <br> 4:00 P.M</h3>
+    </main>
+    <section class="carrousel">
+        <section class="carrousel_container">
+            <div class="carrousel-item">
+                <img class="carrousel-item_img" src="https://res.cloudinary.com/stovarm/image/upload/v1631802660/Wedding_Web/1631561648716_mod_znhoo4.jpg" alt="People">
+            </div>
+
+            <div class="carrousel-item">
+                <img class="carrousel-item_img" src="https://res.cloudinary.com/stovarm/image/upload/v1631802660/Wedding_Web/1631561670516-min_lxdxqp.jpg" alt="People">
+            </div>
+
+            <div class="carrousel-item">
+                <img class="carrousel-item_img" src="https://res.cloudinary.com/stovarm/image/upload/v1631802660/Wedding_Web/1631561648709-min_cfycas.jpg" alt="People">
+            </div>
+
+            <div class="carrousel-item">
+                <img class="carrousel-item_img" src="https://res.cloudinary.com/stovarm/image/upload/v1631802660/Wedding_Web/1631561648697_vsrqfy.jpg" alt="People">
+            </div>
+
+            <div class="carrousel-item">
+                <img class="carrousel-item_img" src="https://res.cloudinary.com/stovarm/image/upload/v1631802660/Wedding_Web/1631561670524_srwfrv.jpg" alt="People">
+            </div>
+
+            <div class="carrousel-item">
+                <img class="carrousel-item_img" src="https://res.cloudinary.com/stovarm/image/upload/v1631802660/Wedding_Web/1631561683895-min_hvt5dx.jpg" alt="People">
+            </div>
+        </section>
+    </section>
+</body>
+</html>
