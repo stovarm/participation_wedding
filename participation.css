@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: "athoor";
+    src: url(/src/assets/AthoorStyleSignature.woff);
+}
+
+body{
+    background-color: #eee8e1;
+}
+
+header {
+    height: 30vh;
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
+}
+
+.titles h1 {
+    margin-top: 1.5rem;
+    background: linear-gradient(90deg, rgba(246,226,126,1) 0%, rgba(203,155,81,1) 50%, rgba(246,226,126,1) 100%);
+    background-clip: border-box;
+    font-size: 5rem;
+    align-self: center;
+    font-family: "athoor";
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.titles h2 {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    align-self: center;
+    font-family: 'Baskervville', serif;
+    letter-spacing: 0.3rem;
+}
+
+main {
+    height: 52vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.streaming a {
+    background-color: rgb(229, 189, 151);
+    border-radius: 2.5rem;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Baskervville', serif;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    text-decoration: none;
+    text-align: center; 
+    box-shadow: 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+main h3 {
+    text-align: center;
+    font-family:'Kaisei HarunoUmi', serif;
+    font-size: 1.5rem;
+}
+
+.carrousel {
+    width: 100%;
+    overflow: scroll; /* propeidad para hacer el carrousel un scroll horizontal. */
+    padding: 2rem;
+    position: relative;
+}
+
+.carrousel_container {
+    white-space: nowrap; /*por defecto se ubicarian los elementos hacía abajo, con esta propiedad los deja seguir */
+    margin: 4rem 0rem;
+    padding-bottom: 1rem;    
+}
+
+.carrousel_container:hover .carrousel-item {    /*cuando haga hover el elemento haga esto.... Opacarse*/
+    opacity: 0.3;
+}
+
+.carrousel_container:hover .carrousel-item:hover {     /*Cuando haga hover el elemento que este hover haga esto...  Aumente su escala*/
+    transform: scale(1.5);
+    opacity: 1;   /*Cuando le haga hover vuelva a opacidad 100% */
+}
+
+.carrousel-item {
+    width: 20rem;
+    height: 25rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin-right: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms;   /*Tiempo que se demora en hacer la animación... hace que se vea mas fluida  */
+    transform-origin: center left;   /*Se centre comenzando desde la izq */
+    position: relative;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.carrousel-item:hover ~ .carrousel-item {  /*cuando haga hover y tmb sin hacerlo haga esto.... Desplazarse a la derecha */
+    transform: translate3d(10rem, 0, 0);
+}
+
+.carrousel-item_img {
+    width: 20rem;
+    height: 25rem;
+    object-fit: cover; /*Guardar la proporción de la imagen y que se acomode a las medidas que establecimos */
+}
+
+iframe {
+    width: 281px;
+    height: 158px;
+}
+
+@media only screen and (min-width: 360px) {
+    iframe {
+        width: 313px;  
+        height: 176px;  
+    }
+}
+
+@media only screen and (min-width: 390px) {
+    iframe {
+        width: 380px;  
+        height: 214px;  
+    }
+}
+
+
+@media only screen and (min-width: 1000px) {
+    iframe {
+        width: 640px;  
+        height: 360px;  
+    }
+    .carrousel-item_img {
+        width: 30rem;
+        height: 35rem;
+    }
+    .carrousel-item {
+        width: 30rem;
+        height: 35rem;
+        
+    }
+}
